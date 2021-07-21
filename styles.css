@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    box-sizing: "borderbox";
+}
+
+html {
+    background-color: "E9E9E9";
+}
+
+body {
+    padding-top: 1rem;
+    width: 100vw;
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+.centralize {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.header {
+    justify-content: right;
+    gap: 1rem;
+    font-size: 0.6rem;
+}
+
+.head-title {
+    padding: 0 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.central-image {
+    justify-content: center;
+}
+
+.engagement-description {
+    padding-top: 2rem;
+    position: relative;
+}
+
+.engagement-description>div {
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+    gap: 1rem;
+}
+
+.engagement-description>img {
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+}
+
+.whattheyresaying {
+    flex-direction: column;
+}
+
+.whattheyresaying .scroll-div {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+}
+
+.whattheyresaying .scroll-div>div {
+    width: 15rem;
+    height: 7rem;
+    background-color: gray;
+}
+
+.request-free {
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+.footer {
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(90deg, #7F0027 0%, #007B77 100%);
+    margin-bottom: 0;
+    height: 7rem;
+}
+
+.footer>div {
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.footer>h4 {
+    padding: 2rem 0;
+    color: white;
+}
+
+.sm-button {
+    background-color: white;
+}
+
+.sm-button img {
+    height: 30px;
+    width: 30px;
+    object-fit: contain;
+}
