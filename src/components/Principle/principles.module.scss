@@ -5,6 +5,12 @@
 	justify-content: center;
 	gap: 1rem;
 
+	img {
+		width: 100px;
+		height: auto;
+		object-fit: contain;
+	}
+
 	h2 {
 		font-size: 1.5rem;
 	}
