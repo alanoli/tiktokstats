@@ -24,4 +24,12 @@
 		margin: 0 1rem;
 		text-align: center;
 	}
+
+	opacity: 0;
+	transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
+}
+
+.container.visible {
+	opacity: 1;
+	transform: translateY(-1em);
 }
