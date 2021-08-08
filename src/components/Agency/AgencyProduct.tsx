@@ -1,5 +1,5 @@
+/* eslint @next/next/no-img-element: "off" */
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
 import styles from './agencyproduct.module.scss';
 
 import PricingTag from '../Princing/PrincingTag';
@@ -12,16 +12,16 @@ const AgencyProduct = () => {
 
 	useEffect(() => {
 		observe();
-	}, []);
+	}, [observe]);
 
 	return (
 		<div className={`${styles.container} ${visible ? styles.visible : ""}`} ref={imageRef}>
 			<h1 className={styles.title}>Agência,</h1>
 			<h2>decida qual influencer vai espalhar a sua marca pelo mundo</h2>
-			<Image src={"/agency.svg"} alt={""} height={300} width={300} />
+			<img src={"/agency.svg"} alt={""} height={300} width={300} />
 			<h2>O nosso comparador considera uma série de fatores para tomada de decisão, tais como:</h2>
-			<Image src={"/agency_factors.svg"} alt={""} height={300} width={300} />
-			<Image
+			<img src={"/agency_factors.svg"} alt={""} height={300} width={300} />
+			<img
 				src={"/agency_acc_compare.svg"} alt={""} height={500} width={500}
 				className={`${styles.compare}`}
 			/>

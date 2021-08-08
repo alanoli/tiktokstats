@@ -1,5 +1,5 @@
+/* eslint @next/next/no-img-element: "off" */
 import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
 
 import styles from './influencerproduct.module.scss';
 
@@ -12,7 +12,7 @@ const InfluencerProduct = () => {
 
 	useEffect(() => {
 		observe();
-	}, []);
+	}, [observe]);
 
 	return (
 		<div

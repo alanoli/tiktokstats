@@ -1,5 +1,5 @@
+/* eslint @next/next/no-img-element: "off" */
 import React from 'react';
-import Image from 'next/image';
 
 import styles from './healthpanel.module.scss';
 import SearchIcon from '@material-ui/icons/Search';
@@ -12,7 +12,7 @@ const HealthPanel = () => {
                 <SearchIcon />
             </section>
             <section className={styles.content}>
-                <Image src={"/sample_user.svg"} alt="" height={300} width={300} />
+                <img src={"/sample_user.svg"} alt="" height={300} width={300} />
                 <div>
                     <h2>78k </h2>
                     <h3>Seguidores</h3>
