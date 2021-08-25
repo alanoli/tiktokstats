@@ -9,7 +9,6 @@ const Landing = () => {
 			<img src={"/landing.svg"} alt="" height={300} width={300} />
 			<section>
 				<h1>Tome decisões no TikTok baseadas em dados</h1>
-				{/* <button>Saiba mais</button> */}
 			</section>
 		</div>
 	)

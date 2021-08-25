@@ -20,19 +20,19 @@ const InfluencerProduct = () => {
 			ref={containerRef}
 		>
 			<h1>Influencer,</h1>
-			<h2>receba uma <strong>consultoria</strong> personalizada e totalmente <strong>automatizada</strong> com a análise do seu perfil</h2>
+			<h2>receba uma <strong>consultoria</strong> personalizada com a análise do seu perfil</h2>
 			<section>
 				<img src="inf1.png" alt="" />
 				<p>Coletamos os dados de <strong>todos</strong> os seus vídeos</p>
 				<img src="inf2.png" alt="" />
 				<p>Os dados são processados e analisados</p>
 				<img src="inf3.png" alt="" />
-				<p>Entregamos um relatório completo com as análises e dicas</p>
+				<p>Entregamos um relatório completo com as análises</p>
 			</section>
 			<h3>Plano</h3>
 			<PricingTag
 				title={"Consultoria completa do perfil"}
-				price={"R$ 35,00"}
+				price={"R$ 15,00"}
 			/>
 		</div>
 	)
