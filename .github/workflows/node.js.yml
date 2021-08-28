@@ -26,10 +26,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: npm run build
-      env:
+      # env:
         # NEXT_PUBLIC_BASE_PATH: /tiktokstats
     - run: npm run export
-      env:
+      # env:
         # NEXT_PUBLIC_BASE_PATH: /tiktokstats
     - run: touch ./out/.nojekyll
     
