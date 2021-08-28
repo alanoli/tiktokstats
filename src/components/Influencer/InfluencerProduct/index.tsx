@@ -5,6 +5,7 @@ import styles from './influencerproduct.module.scss';
 
 import PricingTag from '../../Princing/PrincingTag';
 import useScrollVisibility from '../../../hooks/useScrollVisibility';
+import prefixPath from "../../../utils/applicationPrefixPath";
 
 const InfluencerProduct = () => {
 	const containerRef = useRef(null);
@@ -22,11 +23,11 @@ const InfluencerProduct = () => {
 			<h1>Influencer,</h1>
 			<h2>receba uma <strong>consultoria</strong> personalizada com a análise do seu perfil</h2>
 			<section>
-				<img src="inf1.png" alt="" />
+				<img src={prefixPath + "inf1.png"} alt="" />
 				<p>Coletamos os dados de <strong>todos</strong> os seus vídeos</p>
-				<img src="inf2.png" alt="" />
+				<img src={prefixPath + "inf2.png"} alt="" />
 				<p>Os dados são processados e analisados</p>
-				<img src="inf3.png" alt="" />
+				<img src={prefixPath + "inf3.png"} alt="" />
 				<p>Entregamos um relatório completo com as análises</p>
 			</section>
 			<h3>Plano</h3>
