@@ -1,0 +1,41 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	color: var(--terciary);
+	padding: 1rem;
+
+	h2 {
+		padding: 0rem 2rem;
+		font-size: 1.2rem;
+		font-weight: normal;
+	}
+
+	.title {
+		color: var(--secondary);
+		font-size: 2.5rem;
+		text-align: left;
+	}
+
+	img {
+		width: 50%;
+		height: auto;
+		object-fit: contain;
+		align-self: center;
+	}
+
+	p {
+		padding: 0 2rem;
+		text-align: center;
+	}
+
+	opacity: 0;
+	transform: translateY(4em);
+	transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
+}
+
+.container.visible {
+	opacity: 1;
+	transform: translateY(0);
+}

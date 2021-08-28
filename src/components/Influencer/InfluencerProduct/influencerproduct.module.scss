@@ -1,0 +1,57 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+
+	padding: 1rem;
+
+	h1,
+	h2,
+	p {
+		color: var(--terciary);
+		font-family: "Roboto", sans-serif;
+	}
+	h1 {
+		color: var(--primary);
+		font-size: 2.5rem;
+		padding-bottom: 0.5rem;
+	}
+	h2 {
+		font-weight: normal;
+		padding: 0rem 2rem;
+		padding-bottom: 2rem;
+		font-size: 1.2rem;
+		strong {
+			font-weight: bold;
+		}
+	}
+
+	h3 {
+		text-align: center;
+	}
+	
+	section {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		text-align: center;
+
+		padding: 0 2rem;
+
+		img {
+			width: 50vw;
+			height: auto;
+			object-fit: contain;
+		}
+	}
+
+	opacity: 0;
+	transform: translateY(4em);
+	transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
+}
+
+.container.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
