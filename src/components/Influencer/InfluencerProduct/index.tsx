@@ -23,11 +23,11 @@ const InfluencerProduct = () => {
 			<h1>Influencer,</h1>
 			<h2>receba uma <strong>consultoria</strong> personalizada com a análise do seu perfil</h2>
 			<section>
-				<img src={prefixPath + "inf1.png"} alt="" />
+				<img src={prefixPath + "/inf1.png"} alt="" />
 				<p>Coletamos os dados de <strong>todos</strong> os seus vídeos</p>
-				<img src={prefixPath + "inf2.png"} alt="" />
+				<img src={prefixPath + "/inf2.png"} alt="" />
 				<p>Os dados são processados e analisados</p>
-				<img src={prefixPath + "inf3.png"} alt="" />
+				<img src={prefixPath + "/inf3.png"} alt="" />
 				<p>Entregamos um relatório completo com as análises</p>
 			</section>
 			<h3>Plano</h3>

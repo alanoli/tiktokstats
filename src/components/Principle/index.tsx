@@ -4,6 +4,7 @@ import React, { useEffect, useRef } from 'react';
 import styles from './principles.module.scss';
 
 import useScrollVisibility from '../../hooks/useScrollVisibility';
+import prefixPath from "../../utils/applicationPrefixPath";
 
 const Principle = ({ imageSource, title, text }) => {
 	const principleRef = useRef(null);
@@ -15,7 +16,7 @@ const Principle = ({ imageSource, title, text }) => {
 
 	return (
 		<div className={`${styles.container} ${visible ? styles.visible : ""}`} ref={principleRef}>
-			<img src={imageSource} alt="" height={300} width={300} />
+			<img src={prefixPath + imageSource} alt="" height={300} width={300} />
 			<h2>{title}</h2>
 			<p>{text}</p>
 		</div>
