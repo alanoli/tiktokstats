@@ -33,3 +33,22 @@
 	opacity: 1;
 	transform: translateY(-1em);
 }
+
+@media only screen and (min-width: 768px) {
+	.container {
+		width: 70vw;
+		margin: auto;
+
+		gap: 2rem;
+
+		img {
+			width: 15%;
+			height: auto;
+			object-fit: contain;
+		}
+
+		p {
+			width: 30%;
+		}
+	}
+}

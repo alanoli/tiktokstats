@@ -30,6 +30,13 @@
 		text-align: center;
 	}
 
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		margin: auto;
+	}
+
 	opacity: 0;
 	transform: translateY(4em);
 	transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
@@ -38,4 +45,45 @@
 .container.visible {
 	opacity: 1;
 	transform: translateY(0);
+}
+
+@media only screen and (min-width: 768px) {
+	.container {
+		width: 70vw;
+		margin: auto;
+
+		h2 {
+			font-size: 2rem;
+		}
+
+		.advantageTextRight {
+			text-align: right;
+			margin-left: auto;
+		}
+
+		.advantageTextLeft {
+			text-align: left;
+			margin-right: auto;
+		}
+
+		h4 {
+			font-size: 1.5rem;
+			width: 30%;
+		}
+
+		img {
+			width: 30%;
+			height: auto;
+			object-fit: contain;
+		}
+
+		h1 {
+			margin-top: 4rem;
+			text-align: center;
+		}
+
+		section {
+			flex-direction: row;
+		}
+	}
 }
